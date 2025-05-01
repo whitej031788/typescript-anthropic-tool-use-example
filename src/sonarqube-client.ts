@@ -32,7 +32,7 @@ type Issue = {
   }
 
 export class SonarQubeClient {
-    private apiClient: AxiosInstance;
+    private readonly apiClient: AxiosInstance;
 
     constructor(baseURL: string, authToken: string) {
         this.apiClient = axios.create({
